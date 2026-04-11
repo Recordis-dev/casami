@@ -3,8 +3,8 @@ import { LayoutDashboard, Truck, Package, Database } from 'lucide-react';
 import { products } from '../data/mockData';
 
 const ERPView = () => (
-  <div className="min-h-screen bg-slate-50 flex">
-    <div className="w-64 bg-slate-900 text-white flex flex-col p-6 space-y-4 shrink-0">
+  <div className="min-h-screen bg-slate-50 flex flex-col md:flex-row">
+    <div className="w-full md:w-64 bg-slate-900 text-white flex flex-col p-6 space-y-4 shrink-0">
       <div className="text-2xl font-black italic text-blue-500 mb-8 tracking-tighter">CASAMI ERP</div>
       <div className="space-y-2">
          <div className="flex items-center gap-3 p-3 bg-blue-600 rounded-xl font-bold"><LayoutDashboard size={20}/> Dashboard</div>
@@ -40,8 +40,8 @@ const ERPView = () => (
             </div>
          </div>
 
-         <div className="bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden">
-           <div className="p-6 border-b flex justify-between items-center">
+           <div className="bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden overflow-x-auto">
+             <div className="p-6 border-b flex flex-col sm:flex-row justify-between items-center gap-4">
              <h3 className="font-bold text-slate-800">Control de Entradas / Salidas</h3>
              <button className="bg-slate-900 text-white px-4 py-2 rounded-lg text-sm font-bold">+ AGREGAR PIEZA</button>
            </div>

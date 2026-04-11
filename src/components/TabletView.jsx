@@ -15,8 +15,8 @@ const TabletView = () => (
       </div>
     </header>
 
-    <div className="flex-1 flex overflow-hidden">
-      <div className="flex-1 p-6 overflow-y-auto">
+    <div className="flex-1 flex flex-col lg:flex-row overflow-hidden">
+      <div className="flex-1 p-4 md:p-6 overflow-y-auto">
         <div className="bg-white p-2 rounded-2xl shadow-sm mb-6 flex gap-2">
           <input
             type="text"
@@ -26,7 +26,7 @@ const TabletView = () => (
           <button className="bg-slate-900 text-white px-10 rounded-xl font-black tracking-widest uppercase">SCAN</button>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {products.map(p => (
             <div key={p.id} className="bg-white p-5 rounded-2xl border-2 border-transparent hover:border-blue-500 transition-all shadow-sm cursor-pointer flex flex-col h-48">
               <div className="flex justify-between items-start">
@@ -45,7 +45,7 @@ const TabletView = () => (
         </div>
       </div>
 
-      <div className="w-96 bg-white border-l shadow-2xl flex flex-col">
+      <div className="w-full lg:w-96 bg-white border-t lg:border-t-0 lg:border-l shadow-2xl flex flex-col h-1/3 lg:h-full">
         <div className="p-6 border-b bg-slate-50">
           <h3 className="font-bold text-slate-700 flex items-center gap-2 text-lg"><ShoppingCart size={22} className="text-blue-600"/> Carrito de Venta</h3>
         </div>

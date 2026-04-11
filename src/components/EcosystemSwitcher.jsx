@@ -2,7 +2,7 @@ import React from 'react';
 import { ShoppingCart, Tablet, Package, Cloud, Rocket } from 'lucide-react';
 
 const EcosystemSwitcher = ({ currentView, setCurrentView }) => (
-  <div className="bg-slate-900 text-white p-2 flex justify-center gap-4 text-[10px] uppercase tracking-widest font-bold border-b border-slate-700 overflow-x-auto whitespace-nowrap sticky top-0 z-50">
+  <div className="bg-slate-900 text-white p-2 flex justify-start md:justify-center gap-2 md:gap-4 text-[9px] md:text-[10px] uppercase tracking-widest font-bold border-b border-slate-700 overflow-x-auto whitespace-nowrap sticky top-0 z-50 scrollbar-hide">
     <button
       onClick={() => setCurrentView('ecommerce')}
       className={`flex items-center gap-1 px-3 py-1 rounded ${currentView === 'ecommerce' ? 'bg-blue-600' : 'hover:bg-slate-800'}`}
